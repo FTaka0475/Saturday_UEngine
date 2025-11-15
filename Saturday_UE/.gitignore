@@ -1,0 +1,31 @@
+# Unreal Engine の Git 管理で必須の除外ファイル
+
+# ビルド成果物と中間ファイル
+/Binaries/
+/Build/
+/DerivedDataCache/
+/Intermediate/
+/Saved/
+
+# ローカル設定ファイル
+.vs/
+.vscode/
+
+# Visual Studio の一時ファイル
+*.VC.db
+*.opensdf
+*.sdf
+*.suo
+
+# Log ファイル
+*.log
+
+# Windows 固有のファイル
+Thumbs.db
+
+# macOS 固有のファイル
+.DS_Store
+
+# Git LFSで管理すべきファイル（注意点）
+# 100MBを超えるアセットファイル（例：.uasset）は
+# ここで無視するのではなく、Git LFSで管理することを推奨します。
